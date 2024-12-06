@@ -12,6 +12,10 @@ import java.util.List;
 public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
     Context context;
     List<Element> elements;
+    public MyAdapter(Context context, List<Element> elements){
+        this.context = context;
+        this.elements = elements;
+    }
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
